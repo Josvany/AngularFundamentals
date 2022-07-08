@@ -17,6 +17,7 @@ import { EventListResolver } from './events/events-list-resolver.service';
 import { NavBarComponent } from './nav/nav-bar.component';
 import { appRoutes } from './routes';
 import { AuthService } from './user/auth.service';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     EventsAppComponent,
@@ -30,6 +31,8 @@ import { AuthService } from './user/auth.service';
   ],
   imports: [
   BrowserModule,
+  FormsModule,
+  ReactiveFormsModule,
     RouterModule.forRoot(appRoutes)
   ],
   providers: [
