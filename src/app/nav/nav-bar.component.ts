@@ -20,11 +20,12 @@ export class NavBarComponent {
     
   }
 
-  searchSession(searchTerm)
+
+  searchSession(searchTerm: string)
   {
     this.eventservice.searchSession(searchTerm).subscribe(sessions => {
       this.foundSession = sessions;
-      console.log(this.foundSession);
+      console.log(this.foundSession)
     });
   }
 }

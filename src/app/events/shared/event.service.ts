@@ -61,7 +61,7 @@ export class EventService {
 
 const EVENTS: IEvent[] = [
     {
-      id: 0,
+      id: 1,
       name: 'Angular Connect',
       date: new Date('9/26/2036'),
       time: '10:00 am',
