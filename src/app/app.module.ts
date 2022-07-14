@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
-import { TOASTR_TOKE, Toastr } from './common/toastr.service';
+import { TOASTR_TOKEN, Toastr } from './common/toastr.service';
 
 import { EventsListComponent,
          EventThumbnailComponent,
@@ -49,7 +49,7 @@ declare let toastr:Toastr
   providers: [
     EventService,
     {
-      provide: TOASTR_TOKE,
+      provide: TOASTR_TOKEN,
       useValue: toastr
     },
     EventService,
