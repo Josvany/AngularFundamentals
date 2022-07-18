@@ -15,7 +15,7 @@ import { EventsListComponent,
          EventThumbnailComponent,
          EventService,
          EventDetailsComponent,
-         EventRouteActivator,
+         EventResolver,
          CreateEventComponent,
          CreateSessionComponent,
          SessionListComponent,
@@ -73,8 +73,8 @@ import { HttpClientModule } from '@angular/common/http';
       useValue: JQuery
     },
     EventService,
-    EventRouteActivator,
     EventListResolver,
+    EventResolver,
     VoterService,
     AuthService,
     {
