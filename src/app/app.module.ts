@@ -32,6 +32,8 @@ import { AuthService } from './user/auth.service';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { UpvoteComponent } from './events/event-details/upvote.component';
 
+import { HttpClientModule } from '@angular/common/http';
+
  let toastr:Toastr = window['toastr'];
  let JQuery = window['$'];
 
@@ -57,7 +59,8 @@ import { UpvoteComponent } from './events/event-details/upvote.component';
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    HttpClientModule
   ],
   providers: [
     EventService,
