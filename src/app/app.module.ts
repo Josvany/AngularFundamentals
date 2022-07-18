@@ -19,7 +19,8 @@ import { EventsListComponent,
          CreateEventComponent,
          CreateSessionComponent,
          SessionListComponent,
-         DurationPipe
+         DurationPipe,
+         VoterService
        } from './events/index'
 
 import { Error404Component } from './errors/404.component';
@@ -29,6 +30,7 @@ import { NavBarComponent } from './nav/nav-bar.component';
 import { appRoutes } from './routes';
 import { AuthService } from './user/auth.service';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { UpvoteComponent } from './events/event-details/upvote.component';
 
  let toastr:Toastr = window['toastr'];
  let JQuery = window['$'];
@@ -48,7 +50,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     CollapsibleWellComponent,
     DurationPipe,
     SimpleModalComponent,
-    ModalTriggerDirective
+    ModalTriggerDirective,
+    UpvoteComponent
   ],
   imports: [
     BrowserModule,
@@ -69,6 +72,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     EventService,
     EventRouteActivator,
     EventListResolver,
+    VoterService,
     AuthService,
     {
       provide: 'canDesactivateCreateEvent', 
